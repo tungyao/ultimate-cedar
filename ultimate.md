@@ -1,6 +1,7 @@
 ### 集成方法
 
-* 快速返回，要注意调用顺序
+* 快速返回，要注意调用顺序  
+
 ```go
 r.Get("ccc", func(writer uc.ResponseWriter, request uc.Request) {
 writer.Json.
@@ -11,5 +12,4 @@ writer.Json.
     Encode("123123").
     Send()
 })
-
 ```
