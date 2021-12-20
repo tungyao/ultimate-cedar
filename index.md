@@ -11,4 +11,5 @@
 ### [集成方法](https://tungyao.github.io/ultimate-cedar/ultimate)
 
 ## 开源赞助
-![jetbrains](https://static.tungyao.com/313531363739d41d8cd98f00b204e9800998ecf8427e.png)
+
+<img alt="jetbrains" src="https://account.jetbrains.com/static/images/jetbrains-logo-inv.svg" width="100" height="100"/>
