@@ -2,6 +2,7 @@
 > https://datatracker.ietf.org/doc/html/rfc6455#section-5.3
 ## template
 ```go
+
 func TestWebsocket(t *testing.T) {
 	r := uc.NewRouter()
 	// r.Debug()
