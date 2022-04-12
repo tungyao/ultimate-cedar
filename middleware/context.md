@@ -1,12 +1,17 @@
 # context
 
-就是原生context，在中间件使用时，context要重新赋予回去，并且要调用`handlerFunc`方法
+就是原生context，在中间件使用时
 
 ```go
 logMiddleware := uc.MiddlewareInterceptor(func (writer uc.ResponseWriter, request uc.Request, handlerFunc uc.HandlerFunc) {
     log.Println("log", request.URL.String())
     // add context
-    request.Context = context.WithValue(request.Context, "member", "hello")
+	request.Context.Set("member","hello")
     handlerFunc(writer, request)
 })
+```
+
+在路由中获取时
+```go
+request.Context.Value(key any)
 ```
