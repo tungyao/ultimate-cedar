@@ -20,7 +20,10 @@ func Test_switchProtocol(t *testing.T) {
 		WebsocketSwitchProtocol19(writer, request, "123", func(value *CedarWebSocketBuffReader, w *CedarWebsocketWriter) {})
 	})
 	r.Post("/ws/push", func(writer ResponseWriter, request Request) {
-		WebsocketSwitchPush("123", 0x1, []byte("hello world"))
+		err := WebsocketSwitchPush("123", "", 0x1, []byte("hello world"))
+		if err != nil {
+			return
+		}
 	})
 	http.ListenAndServe(":8080", r)
 }
