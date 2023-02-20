@@ -124,7 +124,7 @@ func (w *CedarWebsocketWriter) Write(data []byte) error {
 	return err
 }
 
-// WebsocketSwitchProtocol19 适配go1.19
+// WebsocketSwitchProtocol19 适配go1.19+
 func WebsocketSwitchProtocol19(w ResponseWriter, r Request, key string, fn func(value *CedarWebSocketBuffReader, writer *CedarWebsocketWriter)) {
 	MaxKeysSaveOrDelete(key)
 	version := r.Header.Get("Sec-Websocket-Version")
@@ -176,7 +176,8 @@ func WebsocketSwitchProtocol19(w ResponseWriter, r Request, key string, fn func(
 	mux.Unlock()
 }
 
-// WebsocketSwitchProtocol
+// Deprecated
+// it will be removed in the next version
 // 用来扩展websocket
 // 只实现了保持在线和推送
 // GET /chat HTTP/1.1
