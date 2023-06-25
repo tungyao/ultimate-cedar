@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/tungyao/ultimate-cedar)](https://github.com/tungyao/ultimate-cedar/blob/main/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/tungyao/ultimate-cedar)
 
-来源与cedar，同时也是其的增强重构版本，移除了大部分无效功能，从而专注于api，同时也为后续扩展留出更多的空间。
+强大的基础网络库, 包含多个有用插件
 ## 基础使用方法
 ### [中间件使用](https://tungyao.github.io/ultimate-cedar/middleware)
  * ### [新增中间件的数值传递](https://tungyao.github.io/ultimate-cedar/middleware/context)
