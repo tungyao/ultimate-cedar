@@ -1,4 +1,4 @@
-## welcome to ultimate-cedar lighting framework
+## cedar lighting framework
 [![CodeQL](https://github.com/tungyao/ultimate-cedar/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/tungyao/ultimate-cedar/actions/workflows/codeql-analysis.yml)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/tungyao/ultimate-cedar)
 [![GitHub license](https://img.shields.io/github/license/tungyao/ultimate-cedar)](https://github.com/tungyao/ultimate-cedar/blob/main/LICENSE)
